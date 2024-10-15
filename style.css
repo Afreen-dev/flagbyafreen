@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+:root {
+  --flag-height: 250px;
+  --red: #ff0000;
+  --bottom: #ffd700;
+}
+.flag {
+  background: gray;
+  height: var(--flag-height);
+  width: calc(var(--flag-height) * 5 / 3);
+  display: flex;
+  flex-direction: column;
+}
+
+.black {
+  background-color: black;
+  flex: 1;
+}
+
+.red {
+  background: var(--red);
+  flex: 1;
+}
+.yellow {
+  background: var(--bottom);
+  flex: 1;
+}
